@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+html body .inner {
+  font-size: 1vw;
+  position: absolute;
+  top: 0;
+  margin: 3% 0 0 5%;
+  background: #09c999;
+  padding: 1vw;
+  border-radius: 10px;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+html body .inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #4261FD;
+}
+
+html body .inner h1 {
+  color: white;
+  margin: 0;
+}
+
+html body .inner p {
+  color: white;
+  font-size: 1vw;
+}
+
+html body .inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+html body .inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
+html body {
+  background-color: #222222;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html body .hero {
+  font-family: 'Roboto Slab', serif;
+  height: 13vw;
+  width: 90%;
+  margin: 15% 5% 5% 5%;
+  position: relative;
+}
+
+html body .hero h1 {
+  color: #4261FD;
+  font-size: 3.2vw;
+}
+
+html body .hero p {
+  width: 45%;
+  color: #707070;
+  font-size: 1.2vw;
+  margin-bottom: 3em;
+  padding: 0;
+}
+
+html body .hero .desktop {
+  position: absolute;
+  right: 0;
+  top: 6%;
+  height: 40%;
+  width: 40%;
+}
+
+html body .hero .desktop .laptopa {
+  -webkit-animation: laptopani 2s infinite  alternate;
+          animation: laptopani 2s infinite  alternate;
+}
+
+@-webkit-keyframes laptopani {
+  100% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+}
+
+@keyframes laptopani {
+  100% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+}
+
+html body .hero a {
+  text-decoration: none;
+  color: #4261FD;
+  background-color: #ffffff;
+  font-weight: 700;
+  padding: 0.7em;
+  border-radius: 1.3em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1.2vw;
+}
+
+html body .hero a:hover {
+  background-color: #4261FD;
+  color: #ffffff;
+}
+
+html body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 100%;
+  margin: 10% 0 0 0;
+}
+
+html body header .logo a svg {
+  width: 30vw;
+}
+
+html body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+html body header ul li {
+  padding: 2em;
+  margin: 0  0.1em;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+html body header ul li a {
+  color: #4261FD;
+  -webkit-text-decoration: underline 3px #ffffff;
+          text-decoration: underline 3px #ffffff;
+  text-underline-offset: 10px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+html body header ul li :hover, html body header ul li .active {
+  color: #ffffff;
+  -webkit-text-decoration: underline 3px #4261FD;
+          text-decoration: underline 3px #4261FD;
+}
+
+html body .about {
+  margin: 5% 2% 0% 2%;
+  padding: 2% 0 2% 0;
+  height: 95vh;
+  position: relative;
+}
+
+html body .about h2 {
+  font-size: 1.8vw;
+  color: #4261FD;
+  -webkit-text-decoration: underline 3px #ffffff;
+          text-decoration: underline 3px #ffffff;
+  text-underline-offset: 1vh;
+}
+
+html body .about p {
+  font-size: 1.5vw;
+  padding: 2vw;
+  color: #707070;
+}
+
+html body .about .gamer {
+  position: absolute;
+  bottom: 10%;
+  left: 75%;
+  width: 25vw;
+}
+
+html .skills {
+  margin: 5% 2% 0% 2%;
+  padding: 2% 0 2% 0;
+  height: 95vh;
+  position: relative;
+}
+
+html .skills h2 {
+  font-size: 1.8vw;
+  color: #4261FD;
+  -webkit-text-decoration: underline 0.2vw #ffffff;
+          text-decoration: underline 0.2vw #ffffff;
+  text-underline-offset: 1vw;
+}
+
+html .skills p {
+  font-size: 1.5vw;
+  padding: 2vw;
+  color: #707070;
+}
+
+html .skills .skillsimg {
+  position: absolute;
+  bottom: 10%;
+  left: 75%;
+  width: 25vw;
+}
+
+html .project {
+  margin: 5% 2% 0% 2%;
+  padding: 2% 0 2% 0;
+  height: 95vh;
+  position: relative;
+}
+
+html .project h2 {
+  font-size: 1.8vw;
+  color: #4261FD;
+  -webkit-text-decoration: underline 0.2vw #ffffff;
+          text-decoration: underline 0.2vw #ffffff;
+  text-underline-offset: 1vw;
+}
+
+html .project p {
+  font-size: 1.5vw;
+  width: 80%;
+  padding: 2vw;
+  color: #707070;
+}
+
+html .project .projectimg {
+  position: absolute;
+  bottom: 10%;
+  left: 75%;
+  width: 25vw;
+}
+
+html .contact {
+  margin: 5% 2% 0% 2%;
+  padding: 2% 0 2% 0;
+  height: 95vh;
+  position: relative;
+}
+
+html .contact h2 {
+  font-size: 1.8vw;
+  color: #4261FD;
+  -webkit-text-decoration: underline 0.2vw #ffffff;
+          text-decoration: underline 0.2vw #ffffff;
+  text-underline-offset: 1vw;
+}
+
+html .contact p {
+  font-size: 1.5vw;
+  width: 80%;
+  padding: 2vw;
+  color: #707070;
+}
+
+html .contact .contactimg {
+  position: absolute;
+  bottom: 10%;
+  left: 75%;
+  width: 25vw;
+}
+
+html .contact .socials {
+  position: absolute;
+  top: 6%;
+  right: 10%;
+}
+
+html .contact .socials .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .contact form {
+  color: #4261FD;
+  margin: 1vw;
+}
+
+html .contact form input {
+  margin: 1vw;
+  background-color: #222222;
+  border: none;
+  width: 20%;
+}
+
+html .contact form textarea {
+  background-color: #222222;
+  border: 0.5px solid white;
+  padding: 1em;
+  color: white;
+}
+
+html .contact form button {
+  margin: 2em 0em 0em;
+  font-size: 1.2vw;
+  color: #4261FD;
+  background-color: #222222;
+  border: 0.1vw solid #707070;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+
+body .skills .container {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 3vw;
+}
+
+body .skills .html-container {
+  height: 5vw;
+  width: 50vw;
+  -webkit-box-shadow: 5px 5px 20px black, -5px -5px 20px rgba(182, 182, 182, 0.5);
+          box-shadow: 5px 5px 20px black, -5px -5px 20px rgba(182, 182, 182, 0.5);
+  border-radius: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .skills .name {
+  margin: 20px 10px 20px;
+  color: #4261FD;
+}
+
+body .skills .loader {
+  height: 3vw;
+  width: 30vw;
+  -webkit-box-shadow: 5px 5px 20px black, -5px -5px 20px rgba(95, 95, 95, 0.5), inset 5px 5px 20px #3d3d3d, inset -5px -5px 20px rgba(128, 128, 128, 0.5);
+          box-shadow: 5px 5px 20px black, -5px -5px 20px rgba(95, 95, 95, 0.5), inset 5px 5px 20px #3d3d3d, inset -5px -5px 20px rgba(128, 128, 128, 0.5);
+  border-radius: 15vw;
+  position: relative;
+}
+
+body .skills .html-loader1 {
+  position: absolute;
+  left: 0;
+  background: #4261FD;
+  height: 3vw;
+  width: 28.5vw;
+  border-radius: 15vw;
+  -webkit-animation-name: html-loader1;
+          animation-name: html-loader1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes html-loader1 {
+  0% {
+    height: 3vw;
+    width: 3vw;
+  }
+  100% {
+    height: 3vw;
+    width: 28.5vw;
+  }
+}
+
+@keyframes html-loader1 {
+  0% {
+    height: 3vw;
+    width: 3vw;
+  }
+  100% {
+    height: 3vw;
+    width: 28.5vw;
+  }
+}
+
+body .skills .percentage {
+  margin: 15px;
+  color: #4261FD;
+}
+
+body .skills .css-container {
+  height: 5vw;
+  width: 50vw;
+  -webkit-box-shadow: 5px 5px 20px black, -5px -5px 20px rgba(182, 182, 182, 0.5);
+          box-shadow: 5px 5px 20px black, -5px -5px 20px rgba(182, 182, 182, 0.5);
+  border-radius: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .skills .css-loader1 {
+  position: absolute;
+  left: 0;
+  background: #4261FD;
+  height: 3vw;
+  width: 27vw;
+  border-radius: 15vw;
+  -webkit-animation-name: css-loader1;
+          animation-name: css-loader1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes css-loader1 {
+  0% {
+    height: 3vw;
+    width: 3vw;
+  }
+  100% {
+    height: 3vw;
+    width: 27vw;
+  }
+}
+
+@keyframes css-loader1 {
+  0% {
+    height: 3vw;
+    width: 3vw;
+  }
+  100% {
+    height: 3vw;
+    width: 27vw;
+  }
+}
+
+body .skills .js-container {
+  height: 5vw;
+  width: 50vw;
+  -webkit-box-shadow: 5px 5px 20px black, -5px -5px 20px rgba(182, 182, 182, 0.5);
+          box-shadow: 5px 5px 20px black, -5px -5px 20px rgba(182, 182, 182, 0.5);
+  border-radius: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .skills .js-loader1 {
+  position: absolute;
+  left: 0;
+  background: #4261FD;
+  height: 3vw;
+  width: 21vw;
+  border-radius: 15vw;
+  -webkit-animation-name: js-loader1;
+          animation-name: js-loader1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes js-loader1 {
+  0% {
+    height: 3vw;
+    width: 3vw;
+  }
+  100% {
+    height: 3vw;
+    width: 21vw;
+  }
+}
+
+@keyframes js-loader1 {
+  0% {
+    height: 3vw;
+    width: 3vw;
+  }
+  100% {
+    height: 3vw;
+    width: 21vw;
+  }
+}
+/*# sourceMappingURL=design.css.map */
